@@ -12,6 +12,11 @@ jQuery(() => {
             updateSlideCounter();
         }
         updateNavigationState();
+
+        // Init textfill
+        $('.text-fill').textfill({
+            innerTag: 'div'
+        });
     });
 
     // On click "Previous" arrow
@@ -24,6 +29,10 @@ jQuery(() => {
             updateSlideCounter();
         }
         updateNavigationState();
+
+        $('.text-fill').textfill({
+            innerTag: 'div'
+        });
     });
 
     function updateNavigationState() {
