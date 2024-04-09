@@ -11,16 +11,70 @@
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
     <script src="iframe-resizer.js"></script>
+    <script src="controls.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Iframe resizer</title>
 </head>
 <body>
     <div class="iframe">
-        <img width="200" height="100" src="./assets/logo.svg" alt="Logo">
-        <h1 class="qs">Vestibulum dapibus nunc ac augue</h1>
-        <p>Aenean massa. Nunc sed turpis. Aliquam erat volutpat. In consectetuer turpis ut velit. Nam commodo suscipit quam.</p>
-        <p>Fusce vel dui. Sed fringilla mauris sit amet nibh. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Ut a nisl id ante tempus hendrerit.</p>
-        <p>🚀 ✨ 🎨 ⚡️ 🚀 ✨ 🎨 ⚡️ 🚀</p>
+        <div class="slide">
+            <img width="200" height="100" src="./assets/logo.svg" alt="Logo">
+            <h1 class="qs">Vestibulum dapibus nunc ac augue</h1>
+            <p>Aenean massa. Nunc sed turpis. Aliquam erat volutpat. In consectetuer turpis ut velit. Nam commodo suscipit quam.</p>
+            <p>Fusce vel dui. Sed fringilla mauris sit amet nibh. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Ut a nisl id ante tempus hendrerit.</p>
+            <p>🚀 ✨ 🎨 ⚡️ 🚀 ✨ 🎨 ⚡️ 🚀</p>
+        </div>
+        <div class="slide">
+            <h1 class="qs">In consectetuer turpis ut velit</h1>
+            <img width="450" height="280" src="./assets/monet.jpeg" alt="Monet">
+        </div>
+        <div class="slide">
+            <h1 class="qs">Lorem ipsum</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xbpgbGjFjqo?si=2uzjOgqxMFudQQcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="controls">
+            <div class="controls__wrapper">
+                <div class="controls__index">
+                    <span data-slideshow-counter="">1</span>&nbsp;of&nbsp;<span data-slideshow-max=""></span>
+                </div>
+                <div class="controls__arrows">
+                    <div class="controls__prev">
+                        <a href="javascript:;" data-slideshow-action="prev" class="controls__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" role="img" aria-hidden="true">
+                                <g id="Group_1864" data-name="Group 1864" transform="translate(-240 -2786)">
+                                    <g id="Ellipse_156" data-name="Ellipse 156" transform="translate(240 2786)" fill="none" stroke="#364659" stroke-width="1.5">
+                                    <circle cx="21.5" cy="21.5" r="21.5" stroke="none"></circle>
+                                    <circle cx="21.5" cy="21.5" r="20.75" fill="none"></circle>
+                                    </g>
+                                    <path id="chevron-down" d="M12.023,17.937,6.75,12.663l.738-.738,4.535,4.535,4.535-4.535.738.738Z" transform="translate(276.431 2795.477) rotate(90)" fill="#364659"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="controls__next">
+                        <a href="javascript:;" data-slideshow-action="next" class="controls__arrow disabled">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" role="img" aria-hidden="true">
+                                <g id="Group_1865" data-name="Group 1865" transform="translate(283 2829) rotate(180)">
+                                    <g id="Ellipse_156" data-name="Ellipse 156" transform="translate(240 2786)" fill="none" stroke="#364659" stroke-width="1.5">
+                                    <circle cx="21.5" cy="21.5" r="21.5" stroke="none"></circle>
+                                    <circle cx="21.5" cy="21.5" r="20.75" fill="none"></circle>
+                                    </g>
+                                    <path id="chevron-down" d="M12.023,17.937,6.75,12.663l.738-.738,4.535,4.535,4.535-4.535.738.738Z" transform="translate(276.431 2795.477) rotate(90)" fill="#364659"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="controls__expand">
+                <div class="controls__expand-inner" data-slideshow-id="presentation_pres_2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" role="img" aria-hidden="true">
+                        <path d="M19.531 8.372H20.931V0L12.559 0V1.4L18.549 1.4L11.542 8.4L12.531 9.389L19.531 2.382V8.372Z" fill="white"></path>
+                        <path d="M8.37199 19.535H2.38199L9.56299 12.354L8.57599 11.367L1.39499 18.549V12.558H-0.00501156V20.931H8.37199V19.535Z" fill="white"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

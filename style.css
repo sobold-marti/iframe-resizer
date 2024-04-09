@@ -8,10 +8,9 @@ body {
 .qs {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
@@ -31,4 +30,76 @@ p {
     top: 50%;
     transform: translate(-50%, -50%);
     transform-origin: center center;
+}
+
+.iframe .slide {
+    display: none;
+}
+
+.iframe .slide:first-child {
+    display: block;
+}
+
+/* Controls */
+.controls {
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    bottom: 1rem;
+    left: 0;
+    position: fixed;
+    width: 90%;
+    margin: auto;
+    right: 0;
+}
+
+.controls__index {
+    margin-right: 10px;
+}
+
+.controls__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.controls__arrows {
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls__arrow.disabled {
+    opacity: .5;
+    cursor: default;
+}
+
+.controls__arrows a {
+    display: block;
+}
+
+.controls__arrows svg {
+    width: 30px;
+    height: 30px;
+}
+
+.controls__expand {
+    margin-left: auto;
+}
+
+.controls__expand-inner {
+    background-color: #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls__expand-inner svg {
+    width: 10px;
+    height: 10px;
 }
