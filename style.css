@@ -30,15 +30,26 @@ p {
     top: 50%;
     transform: translate(-50%, -50%);
     transform-origin: center center;
+    display: flex;
+    justify-content: center;
 }
 
 .iframe .slide {
     display: none;
+    width: fit-content;
 }
 
 .iframe .slide:first-child {
     display: block;
 }
+
+.text-fill {
+    margin: auto;
+}
+
+/* .iframe-content {
+    width: fit-content;
+} */
 
 /* Controls */
 .controls {
